@@ -1,0 +1,5 @@
+.text{
+	white-space: nowrap !important;			/*内容超出后隐藏*/
+	text-overflow: ellipsis !important;	/* 超出内容显示为省略号*/
+	overflow: hidden;										/*文本不进行换行*/
+}
