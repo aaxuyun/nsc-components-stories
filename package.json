@@ -1,5 +1,5 @@
 {
-  "name": "nsc-components",
+  "name": "nsc-components-demo",
   "version": "0.1.0",
   "description": "",
   "main": "es5/index.js",
@@ -8,18 +8,18 @@
     "build:es5": "babel src --out-dir es5",
     "build:watch": "babel src -w -d es5",
     "lint:watch": "esw -w src/**",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build:es5"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nsc-open/nsc-components.git"
+    "url": "git+https://github.com/aaxuyun/nsc-components-stories"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nsc-open/nsc-components/issues"
+    "url": "https://github.com/aaxuyun/nsc-components-stories/issues"
   },
-  "homepage": "https://github.com/nsc-open/nsc-components#readme",
+  "homepage": "https://github.com/aaxuyun/nsc-components-stories#readme",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.5.5",
