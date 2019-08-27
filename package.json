@@ -1,8 +1,8 @@
 {
-  "name": "nsc-components-test",
+  "name": "nsc-components-aa",
   "version": "0.1.0",
   "description": "",
-  "main": "dist/main.js",
+  "main": "es5/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js -p",
