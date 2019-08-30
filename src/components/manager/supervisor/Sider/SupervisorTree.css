@@ -1,0 +1,23 @@
+.item {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  border-color: silver;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: #eee;
+}
+
+.collapsePanel {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  bottom: 10px;
+  padding: 5px 10px 10px 10px;
+  width: 100%;
+  overflow: auto
+}

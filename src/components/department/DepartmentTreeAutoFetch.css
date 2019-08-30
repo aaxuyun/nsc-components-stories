@@ -1,0 +1,20 @@
+.titleWrapper {
+
+}
+
+.createBtnWrapper, .editBtnWrapper {
+  display: none;
+}
+
+.createBtnWrapper {
+  margin-left: 8px;
+}
+
+.editBtnWrapper {
+  margin-left: 4px
+}
+
+.titleWrapper:hover .createBtnWrapper,
+.titleWrapper:hover .editBtnWrapper {
+  display: inline-block;
+}

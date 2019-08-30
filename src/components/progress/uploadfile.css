@@ -1,0 +1,43 @@
+.uploadPdfStyle img[alt$=".pdf"],
+.uploadPdfStyle img[alt$=".xlsx"],
+.uploadPdfStyle img[alt$=".xltx"],
+.uploadPdfStyle img[alt$=".potx"],
+.uploadPdfStyle img[alt$=".ppsx"],
+.uploadPdfStyle img[alt$=".pptx"],
+.uploadPdfStyle img[alt$=".sldx"],
+.uploadPdfStyle img[alt$=".docx"],
+.uploadPdfStyle img[alt$=".dotx"],
+.uploadPdfStyle img[alt$=".xlsm"],
+.uploadPdfStyle img[alt$=".xlsb"]
+{
+  font-size: 14px;
+  line-height: 1;
+  position: relative;
+}
+
+
+.uploadPdfStyle img[alt$=".pdf"]:after,
+.uploadPdfStyle img[alt$=".xlsx"]:after,
+.uploadPdfStyle img[alt$=".xltx"]:after,
+.uploadPdfStyle img[alt$=".potx"]:after,
+.uploadPdfStyle img[alt$=".ppsx"]:after,
+.uploadPdfStyle img[alt$=".pptx"]:after,
+.uploadPdfStyle img[alt$=".sldx"]:after,
+.uploadPdfStyle img[alt$=".docx"]:after,
+.uploadPdfStyle img[alt$=".dotx"]:after,
+.uploadPdfStyle img[alt$=".xlsm"]:after,
+.uploadPdfStyle img[alt$=".xlsb"]:after
+{
+  content: attr(alt);
+  position: absolute;
+  color:#1890ff;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%,-50%,0);
+  width: 100%;
+  height: 100%;
+  background-color:#fff;
+  display: flex;
+  align-items: center;
+}
+

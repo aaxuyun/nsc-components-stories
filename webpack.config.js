@@ -1,18 +1,20 @@
 var path = require('path');
 var webpack = require('webpack');
 //var HtmlWebpackPlugin = require('html-webpack-plugin');
-
+//const ExtractTextPlugin = require("extract-text-webpack-plugin")
+//const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry:'./src/index.js',
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: '[name].js',
-    chunkFilename: 'dist/[name].[chunkhash:6].js'
+    filename: 'dist/main.js',
+    library: 'nsc-components-ss',
+    libraryTarget: 'umd',
+    libraryExport: 'default'
   },
   resolve: {
     alias: {
-      'antd-easy': path.join(__dirname, './lib')
+      '@': path.resolve(__dirname, './src')
     }
   },
   module: {
@@ -20,7 +22,7 @@ module.exports = {
       {
         test: /\.js[x]?$/,
         exclude: /node_modules/,
-        include: [path.resolve(__dirname, 'src'), path.resolve(__dirname, 'test')],
+        include: [path.resolve(__dirname, 'src')],
         loader: 'babel-loader',
         
       },
@@ -30,15 +32,27 @@ module.exports = {
         use: [
           'style-loader',
           { loader: 'css-loader', options: { importLoaders: 1 } },
-          'less-loader'
+          'less-loader',
+          { loader: 'less-loader', options: { javascriptEnabled: true } }
         ]
       },
       {
         test: /\.css$/,
-        use: [
-          'style-loader','css-loader'
+        use: [{
+          loader: "style-loader"
+        }, 
+        {
+          loader: 'css-loader',
+          options:{ 
+            modules: {
+              mode: 'local',
+              localIdentName: '[name]-[local]',
+            },
+          }
+        }
         ]
-      }
+      },
+      
     ]
   },
   plugins: [
@@ -47,7 +61,9 @@ module.exports = {
     //     warnings: false
     //   }
     // }),
+    //new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
+    //new ExtractTextPlugin('css/[name].css')
     // new HtmlWebpackPlugin({
     //   template: './test/index.html'
     // })

@@ -1,0 +1,45 @@
+.popupWrapper {
+  position: fixed;
+  border: 1px solid lightgrey;
+  box-shadow: 3px 3px 3px rgba(0,0,0,.4);
+  background: #fff;
+  border-radius: 2px;
+  min-width: 200px;
+}
+
+:global(.rc-contextmenu .ant-menu) {
+  background: #fff;
+}
+
+:global(.rc-contextmenu .ant-menu-item) {
+  color: #026062 !important;
+  margin-bottom: 4px !important;
+  height: 30px;
+  line-height: 30px;
+}
+
+:global(.rc-contextmenu .ant-menu-item:hover) {
+  color: #fff !important;
+  background: #08b9aa;
+}
+
+:global(.rc-contextmenu .ant-menu-submenu) {
+  color: #026062 !important;
+  margin-bottom: 4px !important;
+  height: 30px;
+  line-height: 30px;
+}
+
+:global(.rc-contextmenu .ant-menu-submenu-active) {
+  background: #08b9aa;
+}
+
+:global(.rc-contextmenu .ant-menu-submenu-title) {
+  height: 28px !important;
+  line-height: 28px !important;
+}
+
+/*
+:global(.rc-contextmenu .ant-menu-submenu-title:hover) {
+  background: #08b9aa;
+} */

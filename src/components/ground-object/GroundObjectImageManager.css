@@ -1,0 +1,13 @@
+.block {
+
+}
+
+.block :global(.ant-upload-list-picture-card .ant-upload-list-item) {
+  width: 300px;
+  height: 200px;
+}
+
+.block :global(.ant-upload.ant-upload-select-picture-card) {
+  width: 300px;
+  height: 200px;
+}

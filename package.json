@@ -1,8 +1,9 @@
 {
-  "name": "nsc-components-aa",
+  "name": "nsc-components-ss",
   "version": "0.1.0",
   "description": "",
-  "main": "es5/index.js",
+  "modules": "es5/index.js",
+  "main": "dist/dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js -p",
@@ -32,6 +33,8 @@
     "babel-loader": "^8.0.6",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
+    "classnames": "^2.2.6",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
     "eslint": "^6.2.1",
     "eslint-plugin-import": "^2.18.2",
@@ -52,7 +55,6 @@
   },
   "dependencies": {
     "antd": "^3.22.0",
-    "babel-plugin-import": "^1.12.0",
-    "postcss-loader": "^3.0.0"
+    "babel-plugin-import": "^1.12.0"
   }
 }
