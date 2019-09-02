@@ -7,8 +7,8 @@ module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry:'./src/index.js',
   output: {
-    filename: 'dist/main.js',
-    library: 'nsc-components-ss',
+    filename: 'main.js',
+    library: 'nsc-components',
     libraryTarget: 'umd',
     libraryExport: 'default'
   },

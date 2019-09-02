@@ -5,7 +5,6 @@ import { Modal, Button, message } from 'antd'
 import { noop } from '@/utils/func'
 import { getWindowSize } from '@/utils/ui'
 import DragMove from '@/lib/components/DragMove'
-import { Provider } from 'react-redux'
 
 const { height } = getWindowSize()
 let zIndex = 200

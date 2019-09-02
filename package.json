@@ -1,9 +1,8 @@
 {
-  "name": "nsc-components-ss",
+  "name": "nsc-components",
   "version": "0.1.0",
+  "module": "es5/index.js",
   "description": "",
-  "modules": "es5/index.js",
-  "main": "dist/dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js -p",
@@ -16,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/aaxuyun/nsc-components-stories"
   },
-  "author": "",
+  "author": "aaxuyun",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/aaxuyun/nsc-components-stories/issues"
@@ -48,13 +47,19 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "style-loader": "^1.0.0",
-    "styled-components": "^4.3.2",
-    "webpack": "^4.39.2",
+    "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7",
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
     "antd": "^3.22.0",
-    "babel-plugin-import": "^1.12.0"
+    "axios": "^0.19.0",
+    "babel-plugin-import": "^1.12.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "path-to-regexp": "^3.1.0",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-color": "^2.17.3",
+    "react-contexify": "^4.1.1"
   }
 }

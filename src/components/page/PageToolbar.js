@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Button, Table, Icon, Row, Col, Input as AntInput, Select as AntSelect } from 'antd'
-import Toolbar from '../Toolbar/Toolbar'
+import Toolbar from '@/lib/components/Toolbar'
 
 const { Tool, Group } = Toolbar
 
