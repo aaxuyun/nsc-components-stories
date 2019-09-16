@@ -23,11 +23,11 @@ var _reactDom = _interopRequireDefault(require("react-dom"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _func = require("@/utils/func");
+var _func = require("../../utils/func");
 
-var _ui = require("@/utils/ui");
+var _ui = require("../../utils/ui");
 
-var _DragMove = _interopRequireDefault(require("@/lib/components/DragMove"));
+var _DragMove = _interopRequireDefault(require("../../lib/components/DragMove"));
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj["default"] = obj; return newObj; } }
 

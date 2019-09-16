@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import { Modal, Button, message } from 'antd'
-import { noop } from '@/utils/func'
-import { getWindowSize } from '@/utils/ui'
-import DragMove from '@/lib/components/DragMove'
+import { noop } from '../../utils/func'
+import { getWindowSize } from '../../utils/ui'
+import DragMove from '../../lib/components/DragMove'
 
 const { height } = getWindowSize()
 let zIndex = 200

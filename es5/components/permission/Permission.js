@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _permission = require("@/utils/permission");
+var _permission = require("../../utils/permission");
 
 /**
  * simple mode, if has no permissions, it will render null

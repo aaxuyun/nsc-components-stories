@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import { Icon } from 'antd'
-import DynamicMountComponent from '@/lib/components/DynamicMountComponent'
+import DynamicMountComponent from './DynamicMountComponent'
 
 /**
  * props.title

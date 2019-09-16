@@ -1,1 +1,1 @@
-module.exports = require('./dist/dist/main.js')
+module.exports = require('./dist/main.js')

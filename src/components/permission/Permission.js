@@ -1,4 +1,4 @@
-import { hasPermission } from '@/utils/permission'
+import { hasPermission } from '../../utils/permission'
 /**
  * simple mode, if has no permissions, it will render null
  * 
